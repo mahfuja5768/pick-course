@@ -17,8 +17,7 @@ const Footer = () => {
                 About
               </header>
               <p>
-                {" "}
-                Discover the perfect home with Dream-Property. As your dedicated
+                Discover the perfect home with Pick-Course. As your dedicated
                 real estate partner, we combine expertise with personalized
                 service, ensuring a seamless experience. Trust us for integrity,
                 innovation, and a commitment to your goals.

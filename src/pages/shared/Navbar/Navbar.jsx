@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <>
       {showNav ? (
-        <div className="justify-center max-w-[2520px] mx-auto z-10 items-center flex flex-col bg-primary text-white h-[70vh] py-12 relative">
+        <div className="justify-center z-10 items-center flex flex-col bg-primary text-white h-[70vh] py-12 relative">
           <div className="flex md:hidden absolute text-white left-0 ps-3 top-0 mt-[20px]">
             <a href="">Pick-Course</a>
           </div>
           <ul className="flex flex-col justify-end items-center gap-7">
-            <li className="cursor-pointer">Categories</li>
-            <li className="cursor-pointer">Website Builders</li>
-            <li className="cursor-pointer">Todays Deals</li>
+            <li className="cursor-pointer">Courses</li>
+            <li className="cursor-pointer">Blog</li>
+            <li className="cursor-pointer">Contact</li>
           </ul>
           <div className="flex items-center relative mt-6">
             <img className="-me-4 absolute w-5 ms-3" src={searchIcon} alt="" />
@@ -28,11 +28,13 @@ const Navbar = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-primary max-w-[2520px] mx-auto h-[64px] mb-12 text-white flex items-center justify-end relative">
-          <div className="  hidden md:flex max-w-[2520px] mx-auto">
-            <div className="justify-between items-center flex">
+        <div className="bg-primary h-[64px] text-white flex items-center justify-between relative">
+          <div className="  hidden md:block max-w-[1280px] mx-auto">
+            <div className="grid grid-cols-3 gap-6 px-4">
               <div>
-                <a href="">Pick-Course</a>
+                <a href="" className="text-2xl font-bold">
+                  Pick-Course
+                </a>
               </div>
               <div className="flex items-center relative me-3">
                 <img
@@ -43,9 +45,9 @@ const Navbar = () => {
                 <input type="text" className="h-[37px] me-2 rounded-lg" />
               </div>
               <ul className="flex justify-between items-center gap-7">
-                <li>Categories</li>
-                <li>Website Builders</li>
-                <li>Today's Deals</li>
+                <li className="cursor-pointer">Courses</li>
+                <li className="cursor-pointer">Blog</li>
+                <li className="cursor-pointer">Contact</li>
               </ul>
             </div>
           </div>

@@ -1,8 +1,14 @@
+import Banner from "../../components/Banner/Banner";
+import CourseCards from "../../components/CourseCards/CourseCards";
+import NewsLetter from "../../components/NewsLetter";
+
 
 const Home = () => {
     return (
         <div>
-            dd
+            <Banner />
+            <CourseCards />
+            <NewsLetter />
         </div>
     );
 };

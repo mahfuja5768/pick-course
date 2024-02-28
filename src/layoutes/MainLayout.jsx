@@ -4,7 +4,7 @@ import Navbar from "../pages/shared/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="font-inter bg-secondary">
+    <div className="font-inter">
         <div className=" pt-0">
           <Navbar />
           <Outlet />
